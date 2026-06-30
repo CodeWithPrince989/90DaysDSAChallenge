@@ -1,0 +1,25 @@
+// Revisit Solution
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;
+
+    long long original = n;
+    long long reverse = 0;
+
+    while (n > 0) {
+        int digit = n % 10;
+        reverse = reverse * 10 + digit;
+        n /= 10;
+    }
+
+    if (original == reverse)
+        cout << "YES";
+    else
+        cout << "NO";
+
+    return 0;
+}
