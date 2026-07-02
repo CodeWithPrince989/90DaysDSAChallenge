@@ -1,18 +1,27 @@
-//Retry This
-
-#include <iostream>
-#include <algorithm>
-
+#include<iostream>
 using namespace std;
 
-int main() {
-    long long A, B, C;
-    if (cin >> A >> B >> C) {
-        long long minimum = min({A, B, C});
-        long long maximum = max({A, B, C});
-        
-        cout << "Min = " << minimum << "\n";
-        cout << "Max = " << maximum << "\n";
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+
+    // for Min
+    if(a<b && a<c){
+        cout << "Min" << a << endl;
+    }else if(b<a && b<c){
+      cout << "Min" << b << endl;
     }
-    return 0;
+    else{
+      cout << "Min" << c << endl;
+    }
+
+   // for Max
+    if(a>b && a>c){
+        cout << "Max" << a << endl;
+    }else if(b>a && b>c){
+        cout << "Max" << b << endl;
+    }else{
+      cout << "Max" << c << endl;
+    }
+  return 0;
 }
