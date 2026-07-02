@@ -1,27 +1,15 @@
-// Revisit Solution
-
-#include <iostream>
-
+#include<iostream>
 using namespace std;
 
-int main() {
+int main(){
     long long n;
-    if (!(cin >> n)) return 0;
+    cin>>n;
 
-    long long reversed_num = 0;
-
-    // Handle the edge case for 0
-    if (n == 0) {
-        cout << 0 << endl;
-        return 0;
+    int ans = 0;
+    while(n>0){
+        ans = (ans*10) + (n%10);
+        n = n/10;  
     }
-
-    // Extract digits and build the reversed number
-    while (n > 0) {
-        reversed_num = reversed_num * 10 + (n % 10);
-        n /= 10;
-    }
-
-    cout << reversed_num << endl;
-    return 0;
+  cout << ans;
+  return 0;
 }

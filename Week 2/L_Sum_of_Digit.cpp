@@ -1,28 +1,15 @@
-// Revisit Solution
-
-#include <iostream>
+#include<iostream>
 using namespace std;
 
-int main() {
+int main(){
     long long n;
+    cin>>n;
 
-    cout << "Enter Number: ";
-    
-    if (cin >> n) {
-        long long sum = 0;
-
-        // Handle case if N is initially 0
-        if (n == 0) {
-            cout << 0 << "\n";
-            return 0;
-        }
-
-        while (n > 0) {
-            sum += n % 10; // Extract the last digit
-            n /= 10;       // Remove the last digit
-        }
-
-        cout << sum << "\n";
+    int sum = 0;
+    while(n>0){
+        sum += n % 10;
+        n = n/10;  
     }
-    return 0;
+  cout << sum;
+  return 0;
 }

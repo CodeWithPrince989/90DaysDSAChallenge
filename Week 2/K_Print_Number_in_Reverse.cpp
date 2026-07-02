@@ -1,5 +1,3 @@
-// Revisit Solution
-
 #include <iostream>
 using namespace std;
 
