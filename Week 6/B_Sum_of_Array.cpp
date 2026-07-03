@@ -8,9 +8,11 @@ int main(){
   for(int i=0; i<n; i++){
     cin>>arr[i];
   }
+  int sum = 0;
   for(int j=n-1; j>=0; j--){
-    arr[j] += 0
+      sum += arr[j];
+    
   }
-  cout<<arr[j];
+  cout << sum;
   return 0;
 }
