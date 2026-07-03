@@ -1,5 +1,3 @@
-// Revisit Solution
-
 #include<iostream>
 using namespace std;
 
@@ -8,12 +6,12 @@ int main(){
     cout<< "Enter Row" << endl;
     cin>>n;
 
-    bool isOne = true;
-    bool isZero = false;
-    for(int i=0; i<n; i++){
-        for(int j=0; j<=i; j++){
-          cout<<isOne;
-          cout<<isZero;
+    bool isOne = 1;
+    bool isZero = 0;
+    for(int i=1; i<n; i++){
+        for(int j=0; j<i; j++){
+            cout<<isOne;
+            cout<<isZero;
         }
         cout<<endl;
     }
